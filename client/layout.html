@@ -6,6 +6,18 @@
              <p></p>
              <p style="color: gray"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span><strong> Tip :</strong> 원하시는 메뉴를 선택하세요!</p>
              <p></p>
+
+             <div class="row">
+                 <div class="col-lg-6">
+                     <div class="input-group">
+                         <input type="text" class="form-control" placeholder="Search for...">
+                         <span class="input-group-btn">
+                            <button class="selectmain" type="submit" onclick="location.href='/selectmain'">Go!</button>
+                         </span>
+                     </div><!-- /input-group -->
+                 </div><!-- /.col-lg-6 -->
+             </div><!-- /.row -->
+
         <ul class="nav nav-tabs">
             <li><a style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'home'}}">홈</a></li>
             <li><a style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'rice'}}">밥</a></li>
@@ -13,6 +25,7 @@
             <li><a style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'contact'}}">밑반찬</a></li>
         </ul>
     </div>
+
 
     {{> yield}}
 
