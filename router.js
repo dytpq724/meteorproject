@@ -11,5 +11,5 @@ Router.route('/study', {name: 'study'});
 Router.route('/contact', {name: 'contact'});
 Router.route('/posts', {name: 'posts'});
 Router.route('/selectmain',{name: 'selectmain'});
+Router.route('/cookwrite',{name: 'cookwrite'});
 //Router.route('/notFound', {name: 'notFound'});
-
