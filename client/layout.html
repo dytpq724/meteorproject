@@ -2,20 +2,20 @@
 <body>
     <div style="height: 30px"></div>
     <div style="width: 1170px; margin: auto; padding: 0px 45px 0px 45px;">
-        <h2 style="background-color: pink; color: white; text-align: center;">Take the good care of the my fridge!</h2>
-        <p></p>
-        <p style="color: gray"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span><strong> Tip
-            :</strong> 원하시는 메뉴를 선택하세요!</p>
-        <p></p>
-        <ul class="nav nav-tabs">
-            <li><a id="home" style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'home'}}">홈</a></li>
-            <li><a id="rice" style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'rice'}}">밥</a></li>
-            <li><a id="jjigae" style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'jjigae'}}">국 / 찌개</a></li>
-            <li><a id="sideFood" style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'sideFood'}}">밑반찬</a></li>
-        </ul>
+    <h2 style="background-color: pink; color: white; text-align: center;">Take the good care of the my fridge!</h2>
+    <p></p>
+    <p style="color: gray"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"></span><strong> Tip
+        :</strong> 원하시는 메뉴를 선택하세요!</p>
+    <p></p>
+    <ul class="nav nav-tabs">
+        <li><a id="home" style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'home'}}">홈</a></li>
+        <li><a id="rice" style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'rice'}}">밥</a></li>
+        <li><a id="jjigae" style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'jjigae'}}">국 / 찌개</a></li>
+        <li><a id="sideFood" style="font-size: 15px; font-family: '10X10'; color: mediumseagreen" href="{{pathFor 'sideFood'}}">밑반찬</a></li>
+    </ul>
     </div>
     <div class="container">
-    {{> createRecipe }}
+        {{> createRecipe }}
     </div>
     {{> yield}}
 

@@ -7,11 +7,10 @@ Template.rice.events({
     }
 });
 
-
 Template.layout.events({
     'click #home' : function (event) {
         //event.preventDefault(); pathfor 같은 라우팅 링크를 막아버리고, 대신 db값이 있으므로 db값만 들고옴
-        var category = Session.set('category', '홈');
+        var category = Session.set('category', '홈'); // 앞에는 변수(키), 뒤에는 들어갈 값, 나중에 사용
     },
     'click #rice' : function (event) {
         //event.preventDefault(); pathfor 같은 라우팅 링크를 막아버리고, 대신 db값이 있으므로 db값만 들고옴
@@ -20,7 +19,7 @@ Template.layout.events({
     'click #jjigae' : function (event) {
         //event.preventDefault();
         var category = Session.set('category', '찌개');
-},
+    },
     'click #sideFood' : function (event) {
         //event.preventDefault();
         var category = Session.set('category', '반찬');

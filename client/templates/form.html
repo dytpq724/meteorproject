@@ -1,7 +1,28 @@
 <template name="form">
-    <div class="form-group">
-        <label for="usr">Title</label>
-        <input type="text" class="form-control title" id="usr" placeholder="요리명을 입력해주세요...">
-        <input type="button" class="btn btn-info commit">
-    </div>
+        <div class="container">
+            <div class="form-group">
+
+                <label style="color: gray" for="title">
+                    <span style="color: hotpink" class="glyphicon glyphicon-heart" aria-hidden="true"></span> Title
+                </label>
+
+                <input type="text" class="form-control title" id="title" placeholder="요리명을 입력해주세요...">
+
+                <label style="color: gray" for="material">
+                    <span style="color: hotpink" class="glyphicon glyphicon-heart" aria-hidden="true"></span> Material
+                </label>
+
+                <input type="text" class="form-control material" id="material" placeholder="재료명을 입력해주세요..."/>
+
+                <div class="temp">
+                {{> formAdd}}
+                </div>
+                {{> addButton}}
+
+                <button type="button" class="btn btn-info commit" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true">작성완료</span>
+                </button>
+
+            </div>
+        </div>
 </template>
