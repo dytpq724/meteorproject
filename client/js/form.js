@@ -18,6 +18,7 @@
              material: material,
              context: context,
              category: category,
+             hand:1,
              createdAt : new Date()
 
          }); // db에 값 저장

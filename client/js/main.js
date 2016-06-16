@@ -6,6 +6,23 @@ Template.rice.events({
 
     }
 });
+Template.rice.helpers({
+    riceLists: function() {
+
+        var category = Session.get('category');
+        console.log('헬퍼 진입');
+        return Tasks.find({category:category});
+    }
+});
+
+Template.jjigae.helpers({
+    riceLists: function() {
+
+        var category = Session.get('category');
+        console.log('헬퍼 진입');
+        return Tasks.find({category:category});
+    }
+});
 
 Template.layout.events({
     'click #home' : function (event) {
@@ -27,11 +44,3 @@ Template.layout.events({
 
 });
 
-Template.foodList.helpers({
-    riceList: function() {
-
-        var category = Session.get('category');
-        console.log('헬퍼 진입');
-        return Tasks.find({category:category});
-    }
-});
